@@ -1,0 +1,239 @@
+apiVersion: ipam.be.kuid.dev/v1alpha1
+kind: IPClaim
+metadata:
+  name: 5g.default-core-rt
+  labels:
+    inv.kuid.dev/router-name: 5g.default-rt
+    nephio.org/network-name: default
+spec:
+  index: 5g.default
+  selector:
+    matchLabels:
+      nephio.org/network-name: default
+      nephio.org/site: core
+  labels:
+    inv.kuid.dev/endpoint-name: 5g.default-core-rt
+---
+apiVersion: ipam.be.kuid.dev/v1alpha1
+kind: IPClaim
+metadata:
+  name: 5g.default-edge-rt
+  labels:
+    inv.kuid.dev/router-name: 5g.default-rt
+    nephio.org/network-name: default
+spec:
+  index: 5g.default
+  selector:
+    matchLabels:
+      nephio.org/network-name: default
+      nephio.org/site: edge
+  labels:
+    inv.kuid.dev/endpoint-name: 5g.default-edge-rt
+---
+apiVersion: ipam.be.kuid.dev/v1alpha1
+kind: IPClaim
+metadata:
+  name: 5g.default-regional-rt
+  labels:
+    inv.kuid.dev/router-name: 5g.default-rt
+    nephio.org/network-name: default
+spec:
+  index: 5g.default
+  selector:
+    matchLabels:
+      nephio.org/network-name: default
+      nephio.org/site: regional
+  labels:
+    inv.kuid.dev/endpoint-name: 5g.default-regional-rt
+---
+apiVersion: ipam.be.kuid.dev/v1alpha1
+kind: IPClaim
+metadata:
+  name: 5g.n2-core-rt
+  labels:
+    inv.kuid.dev/router-name: 5g.n2-rt
+    nephio.org/network-name: n2
+spec:
+  index: 5g.n2
+  selector:
+    matchLabels:
+      nephio.org/network-name: n2
+      nephio.org/site: core
+  labels:
+    inv.kuid.dev/endpoint-name: 5g.n2-core-rt
+---
+apiVersion: ipam.be.kuid.dev/v1alpha1
+kind: IPClaim
+metadata:
+  name: 5g.n2-regional-rt
+  labels:
+    inv.kuid.dev/router-name: 5g.n2-rt
+    nephio.org/network-name: n2
+spec:
+  index: 5g.n2
+  selector:
+    matchLabels:
+      nephio.org/network-name: n2
+      nephio.org/site: regional
+  labels:
+    inv.kuid.dev/endpoint-name: 5g.n2-regiona-rt
+---
+apiVersion: ipam.be.kuid.dev/v1alpha1
+kind: IPClaim
+metadata:
+  name: 5g.n3-edge-rt
+  labels:
+    inv.kuid.dev/router-name: 5g.n3-rt
+    nephio.org/network-name: n3
+spec:
+  index: 5g.n3
+  selector:
+    matchLabels:
+      nephio.org/network-name: n3
+      nephio.org/site: edge
+  labels:
+    inv.kuid.dev/endpoint-name: 5g.n3-edge-rt
+---
+apiVersion: ipam.be.kuid.dev/v1alpha1
+kind: IPClaim
+metadata:
+  name: 5g.n4-edge-rt
+  labels:
+    inv.kuid.dev/router-name: 5g.n4-rt
+    nephio.org/network-name: n4
+spec:
+  index: 5g.n4
+  selector:
+    matchLabels:
+      nephio.org/network-name: n4
+      nephio.org/site: edge
+  labels:
+    inv.kuid.dev/endpoint-name: 5g.n4-edge-rt
+---
+apiVersion: ipam.be.kuid.dev/v1alpha1
+kind: IPClaim
+metadata:
+  name: 5g.n4-core-rt
+  labels:
+    inv.kuid.dev/router-name: 5g.n4-rt
+    nephio.org/network-name: n4
+spec:
+  index: 5g.n4
+  selector:
+    matchLabels:
+      nephio.org/network-name: n4
+      nephio.org/site: core
+  labels:
+    inv.kuid.dev/endpoint-name: 5g.n4-core-rt
+---
+apiVersion: ipam.be.kuid.dev/v1alpha1
+kind: IPClaim
+metadata:
+  name: 5g.n6-edge-rt
+  labels:
+    inv.kuid.dev/router-name: 5g.n6-rt
+    nephio.org/network-name: n6
+spec:
+  index: 5g.n6
+  selector:
+    matchLabels:
+      nephio.org/network-name: n6
+      nephio.org/site: edge
+  labels:
+    inv.kuid.dev/endpoint-name: 5g.n6-edge-rt
+---
+apiVersion: ipam.be.kuid.dev/v1alpha1
+kind: IPClaim
+metadata:
+  name: 5g.sbi-core-rt
+  labels:
+    inv.kuid.dev/router-name: 5g.sbi-rt
+    nephio.org/network-name: sbi
+spec:
+  index: 5g.sbi
+  selector:
+    matchLabels:
+      nephio.org/network-name: sbi
+      nephio.org/site: core
+  labels:
+    inv.kuid.dev/endpoint-name: 5g.sbi-core-rt
+---
+apiVersion: ipam.be.kuid.dev/v1alpha1
+kind: IPClaim
+metadata:
+  name: 5g.sbi-edge-rt
+  labels:
+    inv.kuid.dev/router-name: 5g.sbi-rt
+    nephio.org/network-name: sbi
+spec:
+  index: 5g.sbi
+  selector:
+    matchLabels:
+      nephio.org/network-name: sbi
+      nephio.org/site: edge
+  labels:
+    inv.kuid.dev/endpoint-name: 5g.sbi-edge-rt
+---
+apiVersion: ipam.be.kuid.dev/v1alpha1
+kind: IPClaim
+metadata:
+  name: 5g.f1-regional-rt
+  labels:
+    inv.kuid.dev/router-name: 5g.f1-rt
+    nephio.org/network-name: f1
+spec:
+  index: 5g.f1
+  selector:
+    matchLabels:
+      nephio.org/network-name: f1
+      nephio.org/site: regional
+  labels:
+    inv.kuid.dev/endpoint-name: 5g.f1-regional-rt
+---
+apiVersion: ipam.be.kuid.dev/v1alpha1
+kind: IPClaim
+metadata:
+  name: 5g.f1-edge-rt
+  labels:
+    inv.kuid.dev/router-name: 5g.f1-rt
+    nephio.org/network-name: f1
+spec:
+  index: 5g.f1
+  selector:
+    matchLabels:
+      nephio.org/network-name: f1
+      nephio.org/site: edge
+  labels:
+    inv.kuid.dev/endpoint-name: 5g.f1-edge-rt
+---
+apiVersion: ipam.be.kuid.dev/v1alpha1
+kind: IPClaim
+metadata:
+  name: 5g.e1-regional-rt
+  labels:
+    inv.kuid.dev/router-name: 5g.e1-rt
+    nephio.org/network-name: e1
+spec:
+  index: 5g.e1
+  selector:
+    matchLabels:
+      nephio.org/network-name: e1
+      nephio.org/site: regional
+  labels:
+    inv.kuid.dev/endpoint-name: 5g.e1-edge-rt
+---
+apiVersion: ipam.be.kuid.dev/v1alpha1
+kind: IPClaim
+metadata:
+  name: 5g.e1-edge-rt
+  labels:
+    inv.kuid.dev/router-name: 5g.e1-rt
+    nephio.org/network-name: e1
+spec:
+  index: 5g.e1
+  selector:
+    matchLabels:
+      nephio.org/network-name: e1
+      nephio.org/site: edge
+  labels:
+    inv.kuid.dev/endpoint-name: 5g.e1-edge-rt

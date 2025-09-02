@@ -1,0 +1,12 @@
+apiVersion: ipam.be.kuid.dev/v1alpha1
+kind: IPClaim
+metadata:
+  name: net1-claim2
+spec:
+  index: 5g.n2
+  selector:
+    matchLabels:
+      nephio.org/network-name: n2
+      nephio.org/site: edge
+  labels:
+    inv.kuid.dev/endpoint-name: cucp

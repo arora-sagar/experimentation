@@ -1,0 +1,48 @@
+apiVersion: network.app.kuid.dev/v1alpha1
+kind: Network
+metadata:
+  name: 5g.vpc-n2
+spec:
+  topology: 5g
+  bridgeDomains:
+  - name: core-bd
+    networkID: 10
+    interfaces:
+    - endpoint: e1-1
+      node: leaf
+      region: region1
+      site: site1
+      vlanID: 3
+      vlanTagging: true
+  - name: regional-bd
+    networkID: 11
+    interfaces:
+    - endpoint: e1-2
+      node: leaf
+      region: region1
+      site: site1
+      vlanID: 3
+      vlanTagging: true
+  routingTables:
+  - name: n2-rt
+    networkID: 12
+    interfaces:
+    - bridgeDomain: core-bd
+      node: leaf
+      region: region1
+      site: site1
+      vlanID: 3
+      vlanTagging: true
+      addresses:
+        - address: 172.2.1.1/24
+  - name: n2-rt
+    networkID: 13
+    interfaces:
+    - bridgeDomain: regional-bd
+      node: leaf
+      region: region1
+      site: site1
+      vlanID: 3
+      vlanTagging: true
+      addresses:
+        - address: 172.2.2.1/24

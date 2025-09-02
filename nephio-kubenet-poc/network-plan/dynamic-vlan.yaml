@@ -1,0 +1,95 @@
+apiVersion: vlan.be.kuid.dev/v1alpha1
+kind: VLANClaim
+metadata:
+  name: f1
+  labels:
+    inv.kuid.dev/router-name: 5g.f1-rt
+    nephio.org/network-name: f1
+spec:
+  index: 5g
+  labels:
+    nephio.org/network-name: f1
+---
+apiVersion: vlan.be.kuid.dev/v1alpha1
+kind: VLANClaim
+metadata:
+  name: e1
+  labels:
+    inv.kuid.dev/router-name: 5g.e1-rt
+    nephio.org/network-name: e1
+spec:
+  index: 5g
+  labels:
+    nephio.org/network-name: e1
+---
+apiVersion: vlan.be.kuid.dev/v1alpha1
+kind: VLANClaim
+metadata:
+  name: n2
+  labels:
+    inv.kuid.dev/router-name: 5g.n2-rt
+    nephio.org/network-name: n2
+spec:
+  index: 5g
+  labels:
+    nephio.org/network-name: n2
+---
+apiVersion: vlan.be.kuid.dev/v1alpha1
+kind: VLANClaim
+metadata:
+  name: n3
+  labels:
+    inv.kuid.dev/router-name: 5g.n3-rt
+    nephio.org/network-name: n3
+spec:
+  index: 5g
+  labels:
+    nephio.org/network-name: n3
+---
+apiVersion: vlan.be.kuid.dev/v1alpha1
+kind: VLANClaim
+metadata:
+  name: n4
+  labels:
+    inv.kuid.dev/router-name: 5g.n4-rt
+    nephio.org/network-name: n4
+spec:
+  index: 5g
+  labels:
+    nephio.org/network-name: n4
+---
+apiVersion: vlan.be.kuid.dev/v1alpha1
+kind: VLANClaim
+metadata:
+  name: n6
+  labels:
+    inv.kuid.dev/router-name: 5g.n6-rt
+    nephio.org/network-name: n6
+spec:
+  index: 5g
+  labels:
+    nephio.org/network-name: n6
+---
+apiVersion: vlan.be.kuid.dev/v1alpha1
+kind: VLANClaim
+metadata:
+  name: sbi
+  labels:
+    inv.kuid.dev/router-name: 5g.sbi-rt
+    nephio.org/network-name: sbi
+spec:
+  index: 5g
+  labels:
+    nephio.org/network-name: sbi
+---
+apiVersion: vlan.be.kuid.dev/v1alpha1
+kind: VLANClaim
+metadata:
+  name: default
+  labels:
+    inv.kuid.dev/router-name: 5g.default-rt
+    nephio.org/network-name: default
+spec:
+  index: 5g
+  labels:
+    nephio.org/network-name: default

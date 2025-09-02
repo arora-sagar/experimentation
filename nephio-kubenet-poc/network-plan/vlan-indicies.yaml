@@ -1,0 +1,9 @@
+apiVersion: vlan.be.kuid.dev/v1alpha1
+kind: VLANIndex
+metadata:
+  name: 5g
+spec:
+  minID: 2
+  maxID: 9
+  labels:
+    inv.kuid.dev/site: 5g

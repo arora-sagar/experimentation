@@ -1,0 +1,6 @@
+apiVersion: network.app.kuid.dev/v1alpha1
+kind: Network
+metadata:
+  name: 5g.default
+spec:
+  topology: 5g

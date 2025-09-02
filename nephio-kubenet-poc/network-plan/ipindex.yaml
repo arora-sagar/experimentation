@@ -1,0 +1,95 @@
+apiVersion: ipam.be.kuid.dev/v1alpha1
+kind: IPIndex
+metadata:
+  name: 5g.default
+  labels:
+    nephio.org/network-name: default
+spec:
+  prefixes:
+  - prefix: 172.10.0.0/16
+    labels:
+      nephio.org/network-name: default
+---
+apiVersion: ipam.be.kuid.dev/v1alpha1
+kind: IPIndex
+metadata:
+  name: 5g.f1
+  labels:
+    nephio.org/network-name: f1
+spec:
+  prefixes:
+  - prefix: 172.5.0.0/16
+    labels:
+      nephio.org/network-name: f1
+---
+apiVersion: ipam.be.kuid.dev/v1alpha1
+kind: IPIndex
+metadata:
+  name: 5g.e1
+  labels:
+    nephio.org/network-name: e1
+spec:
+  prefixes:
+  - prefix: 172.4.0.0/16
+    labels:
+      nephio.org/network-name: e1
+---
+apiVersion: ipam.be.kuid.dev/v1alpha1
+kind: IPIndex
+metadata:
+  name: 5g.sbi
+  labels:
+    nephio.org/network-name: sbi
+spec:
+  prefixes:
+  - prefix: 172.1.0.0/16
+    labels:
+      nephio.org/network-name: sbi
+---
+apiVersion: ipam.be.kuid.dev/v1alpha1
+kind: IPIndex
+metadata:
+  name: 5g.n6
+  labels:
+    nephio.org/network-name: n6
+spec:
+  prefixes:
+  - prefix: 172.0.0.0/16
+    labels:
+      nephio.org/network-name: n6
+---
+apiVersion: ipam.be.kuid.dev/v1alpha1
+kind: IPIndex
+metadata:
+  name: 5g.n2
+  labels:
+    nephio.org/network-name: n2
+spec:
+  prefixes:
+  - prefix: 172.2.0.0/16
+    labels:
+      nephio.org/network-name: n2
+---
+apiVersion: ipam.be.kuid.dev/v1alpha1
+kind: IPIndex
+metadata:
+  name: 5g.n3
+  labels:
+    nephio.org/network-name: n3
+spec:
+  prefixes:
+  - prefix: 172.3.0.0/16
+    labels:
+      nephio.org/network-name: n3
+---
+apiVersion: ipam.be.kuid.dev/v1alpha1
+kind: IPIndex
+metadata:
+  name: 5g.n4
+  labels:
+    nephio.org/network-name: n4
+spec:
+  prefixes:
+  - prefix: 172.6.0.0/16
+    labels:
+      nephio.org/network-name: n4
